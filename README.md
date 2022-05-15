@@ -10,4 +10,4 @@ This is a dashboard to display Human Resources (HR) data from fictitious company
 The dashboard was made using Human Resources dataset which provided by Richard Huebner, published on <a href="https://www.kaggle.com/datasets/rhuebner/human-resources-data-set">Kaggle</a>
 
 <h1>Dashboard</h1>
-You can see the dashboard at my Shiny Apps
+You can see the dashboard at <a href="https://ishindunata.shinyapps.io/hr_dashboard/">my Shiny Apps</a>
