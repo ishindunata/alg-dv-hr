@@ -2,13 +2,12 @@
 Visualizing HR sample data set using shiny
 
 <h1>Background</h1>
-This is a dashboard to display sales performance from an e-commerce. The insights displayed are:
+This is a dashboard to display Human Resources (HR) data from fictitious company. The insights displayed are:
+<li>Overview of employee data trend and demography</li>
+<li>Analysis of no of employee and salary by department, employee generation and work stage proportion</li>
 
-Overview of sales value growth and profit growth
-Distribution of transactions from each product category
-Sales profile of each country
-Dataset
-The dashboard was made using Global Superstore dataset which provided by Chandra Shekhar, published on Kaggle
+<h1>Dataset</h1>
+The dashboard was made using Human Resources dataset which provided by Richard Huebner, published on <a href="https://www.kaggle.com/datasets/rhuebner/human-resources-data-set">Kaggle</a>
 
-Dashboard
+<h1>Dashboard</h1>
 You can see the dashboard at my Shiny Apps
