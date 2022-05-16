@@ -16,7 +16,7 @@ library(DT)
 options(scipen=123)
 
 # read data
-hrdt <- read.csv("HRDataset_v14.csv", stringsAsFactors = T) 
+hrdt <- read.csv("HRDataset_v14.csv", stringsAsFactors = T, fileEncoding="UTF-8-BOM") 
 
 ## data wrangling
 hrdt_clean <-  hrdt %>% 
@@ -57,9 +57,10 @@ hrdt_clean <-  hrdt %>%
                        )
     ),
   ) %>% 
-  mutate_at(c("ï..Employee_Name","ManagerName"), as.character) %>% 
+  # mutate_at(c("ï..Employee_Name","ManagerName"), as.character) %>% 
+  mutate(ManagerName=as.character("ManagerName")) %>% 
   mutate_at(c("Generation","WorkStage"), as.factor) %>% 
-  rename(EmployeeName = ï..Employee_Name)
+  rename(EmployeeName = Employee_Name)
 
 hrdt_trend <- hrdt_clean %>% 
   group_by(HireYr) %>% 
